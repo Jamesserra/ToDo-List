@@ -7,6 +7,7 @@
   <title>To Do List</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/1608df4208.js" crossorigin="anonymous"></script>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js"></script>
 </head>
@@ -15,15 +16,22 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h2>To Do List</h2>
+        <p class="text-center header">To Do List</p>
         <div class="row">
           <div class="col-xs-12">
             <div id="todo-list" class="row">
             </div>
-            <form id="create-task">
-              <input id="new-task-content" type="text" placeholder="new task" required />
-              <button>Create</button>
-            </form>
+            <div class="bottom">
+              <form id="create-task">
+                <input id="new-task-content" type="text" placeholder="Enter Task" required />
+                <button>Create</button>
+              </form>
+              <div class="filterContainer">
+                <button class="filter-item active" id="all">All</button>
+                <button class="filter-item" id="active">Active</button>
+                <button class="filter-item" id="completed">Completed</button>
+              </div>
+            </div>
           </div>
 
         </div>
